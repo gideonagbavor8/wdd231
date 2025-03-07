@@ -1,0 +1,57 @@
+@media (max-width: 600px) {
+    header span{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul li {
+        text-align: center;
+        margin: 5px 0;
+        padding: 0.7rem;
+
+    } 
+    nav ul.show{
+        display: flex;
+        /* padding: 3rem; */
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .right{
+        /* width: 420px; */
+        width: 90%;
+        margin: 20px;
+    }
+    .filter{
+        /* flex-direction: column; */
+        align-items: center;
+    }
+    .filter button{
+        width: auto;
+        height: auto;
+        margin:  4px;
+        font-size: 0.9rem;
+    }
+    .course-list{
+        flex-direction: column;
+        align-items: center;
+        /* width: auto; */
+    }
+    .course-item{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}
+

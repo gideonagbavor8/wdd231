@@ -3,10 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Normalize CSS</title>
+    <title>Course Home Page</title>
+    <meta name="description" content="">
+    <meta name="author" content="Gideon Komla Agbavor">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <div class="profile">
+            <img src="images/profile.jpg" alt="My Profile">
+            <span>Gideon Komla Agbavor</span>
+        </div>
+        <nav class="links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamber.html">Chamber</a></li>
+                <li><a href="https://github.com/gideonagbavor8" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/gideon-k-agbavor/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="container">
+            <section class="left">
+                <h2>Course Work</h2>
+                <ul>
+                    <li><a href="#">Introduction to HTML</a></li>
+                    <li><a href="#">CSS Basics</a></li>
+                    <li><a href="#">JavaScript Fundamentals</a></li>
+                    <li><a href="#">Responsive Web Design</a></li>
+                    <li><a href="#">Version Control with Git</a></li>
+                    <li><a href="#">Web Accessibility</a></li>
+                </ul>
+            </section>
+            <section class="right">
+                <h2>Ho-Volta Region, Ghana</h2>
+                <div class="kente">
+                <img src="images/kente.jpeg" alt="Kente" title="Kente">
+
+                </div>                <p>Kente</p>
+            </section>
+        </div>
+        <section id="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter">
+                <button onclick="filteredCourses('all')">All Courses</button>
+                <button onclick="filteredCourses('CSE')">CSE Courses</button>
+                <button onclick="filteredCourses('WDD')">WDD Courses</button>
+            </div>
+            <hr>
+            <div id="total-credits">
+                The total number of Course credits listed below is: <span id="credits-count">0</span>
+            </div>
+            <div class="course-list" id="courses-list">
+                <button>CSE 110</button>
+                <button>WDD 130</button>
+                <button>CSE 111</button>
+                <button>CSE 210</button>
+                <button>WDD 131</button>
+                <button>WDD 231</button>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 💖 Gideon Komla Agbavor 💖 Ghana 
+        <img src="images/ghana-flag.webp" alt="Ghana Flag">
+        </p>
+        <p id="lastModified">Last Update: </p>
+    </footer>
 </body>
 </html>

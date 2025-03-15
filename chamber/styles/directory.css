@@ -185,13 +185,13 @@ main{
 .current-weather p{
     margin-top: 10px;
     text-align: left;
-    padding-left: 3.6rem;
+    padding-left: 6rem;
     margin-top: 0.3rem;
 }
 
 .current-weather img{
-    padding-left: -3em;
-    width: 60px;
+    /* padding-left: -3em; */
+    width: 90px;
     position: absolute;
 }
 

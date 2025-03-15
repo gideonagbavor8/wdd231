@@ -146,6 +146,8 @@
         width: 90%;
         margin-bottom: 1rem;
 
+
+        
     }
 
 
@@ -215,9 +217,9 @@
         /* line-height: 1rem; */
     }
 
-    .comp-name h1 {
+    /* .comp-name h1 {
         font-size: 1.2rem;
-    }
+    } */
 
     .comp-name p {
         font-size: 0.6rem;

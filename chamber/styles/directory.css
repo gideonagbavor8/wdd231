@@ -323,6 +323,10 @@ footer p, a{
     color: var(--Text-Color);
 }
 
+.left, p, a {
+    color: black;
+}
+
 footer .left .hliha {
     font-weight: bold;
 }

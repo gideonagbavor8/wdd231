@@ -43,6 +43,7 @@
     .theme-toggle-small {
         display: none;
         /* order: 1; */
+        
     }
     
     
@@ -51,6 +52,7 @@
         border: none;
         font-size: 1.5rem;
         cursor: pointer;
+        /* color: var(--Text-Color); */
     }
     .menu-toggle-small{
         order: 2;
@@ -116,6 +118,7 @@
         border: none;
         font-size: 1.5rem;
         cursor: pointer;
+        color: var(--Text-Color);
         transition: transform 0.3s ease;
     }
 

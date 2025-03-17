@@ -3,31 +3,7 @@
     --Secondary-Color: #455a64;
     --Background-Color: #d4dfe4;
     --Text-Color: #ffffff;
-    --fa-animation-delay: 0s;
-    --fa-rotate-angle: 0deg;
-
 }
-
-.fa-beat,
-.fa-beat-fade,
-.fa-fade,
-.fa-flip,
-.fa-spin {
-    animation-delay: var(--fa-animation-delay);
-}
-
-.fa-flip-horizontal {
-    transform: scaleX(-1);
-}
-
-.fa-flip-vertical {
-    transform: scaleY(-1);
-}
-
-.fa-rotate-by {
-    transform: rotate(var(--fa-rotate-angle));
-}
-
 
 
 body {

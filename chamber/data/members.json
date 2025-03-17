@@ -4,7 +4,7 @@
         "address": "123 Main St, City, Country",
         "phone": "123-456-7890",
         "website": "http://www.companyone.com",
-        "image": "gideon.jpg",
+        "image": "gideon.webp",
         "membershipLevel": 1
     },
     {
@@ -12,7 +12,7 @@
         "address": "456 Elm St, City, Country",
         "phone": "987-654-3210",
         "website": "http://www.companytwo.com",
-        "image": "williams.jpg",
+        "image": "williams.webp",
         "membershipLevel": 2
     },
     {
@@ -20,7 +20,7 @@
         "address": "789 Oak St, City, Country",
         "phone": "555-555-5555",
         "website": "http://www.companythree.com",
-        "image": "smart.jpg",
+        "image": "smart.webp",
         "membershipLevel": 3
     },
     {
@@ -28,7 +28,7 @@
         "address": "101 Pine St, City, Country",
         "phone": "444-444-4444",
         "website": "http://www.companyfour.com",
-        "image": "swot.jpg",
+        "image": "swot.webp",
         "membershipLevel": 1
     },
     {
@@ -36,7 +36,7 @@
         "address": "202 Maple St, City, Country",
         "phone": "333-333-3333",
         "website": "http://www.companyfive.com",
-        "image": "paave.jpg",
+        "image": "paave.webp",
         "membershipLevel": 2
     },
     {
@@ -44,7 +44,7 @@
         "address": "303 Birch St, City, Country",
         "phone": "222-222-2222",
         "website": "http://www.companysix.com",
-        "image": "paave-2.jpg",
+        "image": "paave-2.webp",
         "membershipLevel": 3
     },
     {
@@ -52,7 +52,7 @@
         "address": "404 Cedar St, City, Country",
         "phone": "111-111-1111",
         "website": "http://www.companyseven.com",
-        "image": "warriors.jpg",
+        "image": "warriors.webp",
         "membershipLevel": 1
     }
 ]

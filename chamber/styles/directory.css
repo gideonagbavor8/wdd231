@@ -8,6 +8,8 @@
 body {
     font-family: 'Montserrat', 'Open Sans', 'Poppins', 'Roboto', sans-serif;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 header {
@@ -82,22 +84,21 @@ nav ul {
     margin-left: 10rem;
 }
 
-/* nav a {
-    text-decoration: none;
-    color: var();
-} */
-
-.theme-toggle-small {
-    display: none;
-}
-
-
-.theme-toggle button {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
+#theme-toggle-button {
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
     cursor: pointer;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
 }
+
+#theme-toggle-button img{
+    width: 30px;
+
+}
+
 
 .menu-toggle-small {
     display: none;
@@ -244,7 +245,7 @@ main{
 .view-toggle button {
     margin: 0 0.5rem;
     padding: 0.5rem 1rem;
-    cursor: pointer;
+    /* cursor: pointer; */
     background-color: var(--Primary-Color);
     color: var(--Text-Color);
     border: none;
@@ -317,9 +318,12 @@ footer {
     background-color: var(--Primary-Color);
 }
 
-footer p, a{
+footer a{
     margin: 0;
     padding: 0.1rem;
+    color: var(--Text-Color);
+}
+footer p{
     color: var(--Text-Color);
 }
 
@@ -358,7 +362,7 @@ footer .center a img:hover {
 
 .dark-mode {
     background-color: #333;
-    color: #f8f9fa;
+    /* color: #f8f9fa; */
 }
 
 .dark-mode header,

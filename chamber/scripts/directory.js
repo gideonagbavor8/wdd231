@@ -5,13 +5,6 @@ const lastModified = document.lastModified;
 document.getElementById('lastModified').textContent = lastModified;
 
 
-// JavaScript for theme toggle
-const themeToggleButton = document.getElementById('theme-toggle-button');
-themeToggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    themeToggleButton.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌗';
-});
-
 // Fetch and display member information
 async function fetchMembers() {
     const response = await fetch('data/members.json');
@@ -52,6 +45,34 @@ document.getElementById('list-view').addEventListener('click', () => {
 });
 
 fetchMembers();
+
+
+
+const themeToggleButton = document.getElementById('theme-toggle-button');
+
+        themeToggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+
+            // Update the button image based on the current mode
+            if (document.body.classList.contains('dark-mode')) {
+                themeToggleButton.innerHTML = '<img src="images/light.png" alt="Light Mode Icon">';
+            } else {
+                themeToggleButton.innerHTML = '<img src="images/dark.png" alt="Dark Mode Icon">';
+            }
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // toggle the menu

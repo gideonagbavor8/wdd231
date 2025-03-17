@@ -30,7 +30,6 @@
 
     .comp-name{
         font-size: 0.8rem;
-        /* line-height: 1rem; */
         display: flex;
         flex-direction: column;
         justify-content: center;

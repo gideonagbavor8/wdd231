@@ -35,12 +35,12 @@ header {
 
 .comp-name{
     padding: 0.3rem;
-    line-height: 0.1rem;
     /* margin-right: 20rem; */
     /* flex-wrap: nowrap; */
 }
 
-.comp-name h1{
+.comp-name .company{
+    line-height: 2.9rem;
     text-align: center;
     font-size: 2.5rem;
 }

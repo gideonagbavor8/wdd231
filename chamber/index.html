@@ -24,7 +24,7 @@
     <meta property="og:image" content="https://example.com/path/to/image.jpg">
     <meta property="og:url" content="https://gideonagbavor8.github.io/wdd231/chamber/directory.html">
 </head>
-<body>
+<body class="home">
     <header>
         <div class="logo">
             <img src="images/hliha.webp" alt="Business Logo" loading="lazy">
@@ -59,13 +59,24 @@
         
     </header>
 
-    <!-- <div class="hero">
+    <div class="hero">
         <img src="images/hero.webp" alt="Hero Image" loading="lazy">
-    </div> -->
+        <div class="hero-text">
+            <p>Welcome to Hliha Chamber of Commerce</p>
+            <p>Empowering Businesses and Communities</p>
+        </div>
+    </div>
+
+    <div class="call-to-action">
+        <a href="join.html" class="cta-button">Join the Chamber of Commerce</a>
+    </div>
 
     <main>
-        <h1>Directory Page</h1>
+        <h1>Home</h1>
+
         <div class="container">
+
+
             <section class="events">
                 <h2>Upcoming Events</h2>
                 <ul>
@@ -99,12 +110,16 @@
                 </div>
             </section>
         </div>
-        <div class="view-toggle">
+        <!-- <div class="view-toggle">
             <button id="grid-view">Grid View</button>
             <button id="list-view">List View</button>
-        </div>
-        <section class="members" id="members">
-            <!-- Member information will be displayed here -->
+        </div> -->
+        <!-- <section class="members" id="members">
+        </section> -->
+
+        <section class="spotlights-header">
+            <h2>Spotlight Members</h2>
+            <div id="spotlights" class="spotlights-container"></div>
         </section>
     </main>
 
@@ -130,5 +145,7 @@
         </div>
     </footer>
 
+
+    
 </body>
 </html>

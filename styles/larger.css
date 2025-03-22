@@ -121,6 +121,53 @@ nav ul li a.active {
     gap: 1.3rem;
 }
 
+#weather {
+    background-color: var(--background-color);
+    width: 40%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+#weather h2{
+    background-color: var(--back2-color);
+    color: var(--text-color);
+    margin-top: -0.09rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px 8px 0 0;
+    /* font-size: 1rem; */
+}
+
+.weather-card {
+    padding: 20px;
+    color: var(--back2-color);
+    text-align: center;
+}
+
+
+
+.weather-card img {
+    width: 100px;
+    height: 100px;
+    /* margin: 10px 0; */
+}
+
+.weather-card p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+
 .left {
     background-color: var(--background-color);
     width: 59%;
@@ -161,10 +208,11 @@ nav ul li a.active {
 }
 
 .left ul li a:hover{
-    color: var(--primary-color);
     padding: 5px;
     /* border-radius: 4px; */
     border-left: 2px solid var(--back2-color);
+    background-color: var(--back2-color);
+    color: var(--text-color);
 }
 
 .right {

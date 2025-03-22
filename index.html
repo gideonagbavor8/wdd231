@@ -44,6 +44,19 @@
     <main>
         <h1>Home</h1>
         <div class="container">
+            <section id="weather">
+                <h2>Current Weather in Ho, Volta Region</h2>
+                <div class="weather-card">
+                    <p>Temperature: <span id="current-temp"></span></p>
+                    <p>Description: <span id="weather-desc"></span></p>
+                    <p>Chance of Rain: <span id="rain-chance"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+            </section>
+            
             <section class="left">
                 <h2>Course Work</h2>
                 <ul>
@@ -90,6 +103,11 @@
         <img src="images/ghana-flag.webp" alt="Ghana Flag">
         </p>
         <p id="lastModified">Last Update: </p>
+        <p>OpenWeatherMap.org | CC BY-SA 4.0</p>
     </footer>
+
+    <script nonce="randomStringHere" src="scripts/home-weather.js"></script>
+    
+
 </body>
 </html>

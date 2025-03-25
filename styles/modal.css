@@ -1,0 +1,48 @@
+.modal {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    width: 80%;
+    /* text-align: center; */
+    overflow-x: hidden;
+}
+
+.modal button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    background-color: #0056b3;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    background: red; /* Add a red background */
+    border: none;
+    outline: none;
+    border-radius: 50%; /* Make it circular */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-button:hover {
+    color: white;
+    background-color: darkred; /* Darker red on hover */
+}

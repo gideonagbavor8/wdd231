@@ -165,7 +165,29 @@ function displayCourses(filter) {
         courseItem.classList.add(course.completed ? 'completed' : 'incomplete');
         courseItem.innerHTML = `
             <h3>${course.subject} ${course.number}</h3>
+            <!--<p>${course.title}</p>-->
         `;
+
+        // Add click event to open modal
+        courseItem.addEventListener('click', () => {
+            const courseDetailsDialog = document.getElementById('course-details');
+            courseDetailsDialog.innerHTML = `
+                <span id="close-modal" class="close-button">&times;</span>
+                <h2>${course.title}</h2>
+                <p><strong>Subject:</strong> ${course.subject}</p>
+                <p><strong>Course Number:</strong> ${course.number}</p>
+                <p><strong>Description:</strong> ${course.description}</p>
+                <p><strong>Credits:</strong> ${course.credits}</p>
+                <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+            `;
+            courseDetailsDialog.showModal();
+        
+            // Close modal functionality
+            document.getElementById('close-modal').addEventListener('click', () => {
+                courseDetailsDialog.close();
+            });
+        });
+
         coursesList.appendChild(courseItem);
     });
 
@@ -177,5 +199,3 @@ function displayCourses(filter) {
 function filteredCourses(filter) {
     displayCourses(filter);
 }
-
-

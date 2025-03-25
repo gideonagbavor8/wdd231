@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/modal.css">
     <script src="scripts/course.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
@@ -87,14 +88,15 @@
             <div id="total-credits">
                 The total number of Course credits listed below is: <span id="credits-count">0</span>
             </div>
+            
             <div class="course-list" id="courses-list">
-                <button>CSE 110</button>
-                <button>WDD 130</button>
-                <button>CSE 111</button>
-                <button>CSE 210</button>
-                <button>WDD 131</button>
-                <button>WDD 231</button>
+            <!-- Buttons for each course will be dynamically generated -->
             </div>
+
+            <dialog id="course-details" class="modal">
+                <!-- Content will be dynamically populated -->
+            </dialog>
+
             
         </section>
     </main>
@@ -107,6 +109,7 @@
     </footer>
 
     <script nonce="randomStringHere" src="scripts/home-weather.js"></script>
+    <script src="scripts/modal.js" defer></script>
     
 
 </body>

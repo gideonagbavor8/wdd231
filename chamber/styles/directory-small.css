@@ -33,6 +33,10 @@
         opacity: 0.9;
     }
 
+    .call-to-action a{
+        line-height: 1.5rem;
+    }
+
     .cta-button{
         display: inline-block;
         padding: 1rem 2rem;

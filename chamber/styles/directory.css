@@ -136,15 +136,15 @@ nav ul {
 .call-to-action a{
     line-height: 2.5rem;
     background: var(--Secondary-Color);
-    opacity: 0.87;
+    /* opacity: 0.87; */
     color: white;
     font-weight: bold;
-    opacity: 1;
+    /* opacity: 1; */
 
 
 }
 
-.call-to-action a {
+/* .call-to-action a {
     line-height: 2.5rem;
     background: var(--Secondary-Color);
     opacity: 0.87;
@@ -152,9 +152,9 @@ nav ul {
     font-weight: bold;
     opacity: 1;
     animation: text-fade-in 2s ease-in-out infinite alternate;
-}
+} */
 
-@keyframes text-fade-in {
+/* @keyframes text-fade-in {
     0% {
         opacity: 0.5;
         transform: scale(0.95);
@@ -163,7 +163,7 @@ nav ul {
         opacity: 1;
         transform: scale(1.05);
     }
-}
+} */
 
 .join-main {
     margin: 2rem;
@@ -290,7 +290,7 @@ nav ul {
   }
 
   .required {
-    color: red;
+    color: var(--Primary-Color);
     font-weight: bold;
 }
 

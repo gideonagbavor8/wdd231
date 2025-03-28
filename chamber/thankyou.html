@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Page: Chamber of Commerce</title>
+    <meta name="description" content="Chamber of Commerce Directory Page.">
+    <meta name="author" content="Gideon Komla Agbavor">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-small.css">
+    <link rel="stylesheet" href="styles/min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+    <script src="scripts/directory.js" defer></script>
+
+    <!-- Facebook Open Graph meta tags -->
+    <meta property="og:title" content="Chamber of Commerce Directory Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/path/to/image.jpg">
+    <meta property="og:url" content="https://gideonagbavor8.github.io/wdd231/chamber/directory.html">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/hliha.webp" alt="Business Logo" loading="lazy">
+        </div>
+        <div class="comp-name">
+            <p class="company">Hliha</p>
+            <p>Chamber of Commerce</p>
+        </div>
+        <!-- <div class="theme-toggle-small">
+            <button id="theme-toggle-button-small"></button>
+            <img id="theme-image" src="images/light.png" alt="Theme Icon">
+        </div> -->
+        <div class="menu-toggle-small">
+            <button id="menu-toggle-button">☰</button>
+        </div>
+        
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discovery.html">Discovery</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle-button">
+            <img src="images/dark.png" alt="Toggle Theme">
+        </button>
+        <!-- <div class="theme-toggle">
+            <button id="theme-toggle-button"></button>
+            <img id="theme-image" src="images/light.png" alt="Theme Icon">
+        </div> -->
+        
+    </header>
+
+    <div class="hero">
+        <img src="images/hero.webp" alt="Hero Image" loading="lazy">
+        <!-- <div class="hero-text">
+            <p>Welcome to Hliha Chamber of Commerce</p>
+            <p>Empowering Businesses and Communities</p>
+        </div> -->
+        <div class="call-to-action">
+            <a href="join.html" class="cta-button">Join the Chamber of Commerce</a>
+        </div>
+    </div>
+  <main>
+    <h1>Membership Details</h1>
+
+    <div id="results"></div>
+    <p id="timestamp-display"></p>
+
+  </main>
+
+  <footer>
+    <div class="left">
+        <p class="hliha">Hliha Chamber of Commerce</p>
+        <p>Togbe Tawiah Street</p>
+        <p>VH-0001-8877</p>
+        <p><a href="info@hlihachamber.com">info@hlihachamber.com</a></p>
+        <p>(233) 55 454 7692</p>
+    </div>
+    <div class="center">
+        <a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube" loading="lazy"></a>
+        <a href="https://www.x.com" target="_blank"><img src="images/x.png" alt="Twitter" loading="lazy"></a>
+        <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" loading="lazy"></a>
+    </div>
+    <div class="right">
+        <p>WDD 231 - Class Project</p>
+        <p>Gideon Komla Agbavor</p>
+        <p>©<span id="currentyear"></span> Hliha Chamber of Commerce</p>
+        <p id="lastModified"></p>
+    </div>
+</footer>
+
+
+</body>
+</html>

@@ -52,7 +52,20 @@
     main h1{
         text-align: center;
     }
+
+    .join-main form{
+        width: 90%; 
+        /* max-width: 768px;  */
+        margin: 0 auto; 
+    }
+
+    .join-main .membership-cards {
+        width: 100%; /* Ensure full width */
+        /* max-width: 768px; */
+        margin: 0 auto; /* Center the content */
+    }
 }
+
 
 @media (max-width: 600px) {
     html, body {
@@ -191,19 +204,21 @@
         
     }
 
-    /* .spotlights-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1rem;
-        margin: 2rem 0;
-    }
-
-    .spotlight-card {
-        width: 100%;
-    } */
-
     .spotlights-header h2{
         text-align: center;
+    }
+
+    @media (max-width: 600px) {
+        .join-main {
+            flex-direction: column; /* Stack form and membership cards vertically */
+            gap: 20px; /* Add spacing between the form and membership cards */
+        }
+    
+        .join-main form,
+        .join-main .membership-cards {
+            
+            max-width: 100%; /* Ensure full width for both containers */
+        }
     }
 
 
@@ -236,6 +251,7 @@
         width: 100%;
         margin: 0.4rem;
     }
+
 
     footer {
         flex-direction: column;

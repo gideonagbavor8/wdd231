@@ -201,3 +201,54 @@ document.getElementById('list-view')?.addEventListener('click', () => {
 
 // Call fetchMembers to display members or spotlights
 fetchMembers();
+
+
+// Open Modals
+document.querySelectorAll('.modal-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+        const modalId = trigger.getAttribute('data-target');
+        const modal = document.getElementById(modalId);
+        modal.showModal();
+    });
+});
+
+// Close Modals with "X" Button
+document.querySelectorAll('.close-modal-x').forEach(button => {
+    button.addEventListener('click', () => {
+        button.closest('dialog').close();
+    });
+});
+
+// Accessibility (Close Modal with Escape Key)
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+        document.querySelectorAll('dialog[open]').forEach(modal => {
+            modal.close();
+        });
+    }
+});
+
+
+// Populate the timestamp field with the current date and time
+document.addEventListener("DOMContentLoaded", () => {
+    const timestampField = document.getElementById("timestamp");
+    const now = new Date();
+    timestampField.value = now.toISOString(); // Use ISO format for consistency
+});
+
+
+ const myInfo = new URLSearchParams(window.location.search);
+
+document.querySelector('#results').innerHTML = `
+<p>Name: ${myInfo.get('firstName')} ${myInfo.get('lastName')}</p>
+<p>Email: ${myInfo.get('email')}</p>
+<p>Phone: ${myInfo.get('mobile')}</p>
+<p>Business Name: ${myInfo.get('businessName')}</p>
+
+`;
+
+ // Display the timestamp
+ const timestamp = myInfo.get('timestamp');
+ if (timestamp) {
+     document.querySelector('#timestamp-display').textContent = `Form Submitted At: ${new Date(timestamp).toLocaleString()}`;
+ }

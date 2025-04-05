@@ -252,3 +252,45 @@ document.querySelector('#results').innerHTML = `
  if (timestamp) {
      document.querySelector('#timestamp-display').textContent = `Form Submitted At: ${new Date(timestamp).toLocaleString()}`;
  }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Fetch JSON data and populate cards
+    fetch("data/items.json")
+        .then(response => response.json())
+        .then(data => {
+            const container = document.querySelector(".cards-container");
+            data.forEach(item => {
+                const card = document.createElement("div");
+                card.classList.add("card");
+                card.innerHTML = `
+                    <h2>${item.name}</h2>
+                    <figure>
+                        <img src="${item.image}" alt="${item.name}">
+                    </figure>
+                    <address>${item.address}</address>
+                    <p>${item.description}</p>
+                    <button>Learn More</button>
+                `;
+                container.appendChild(card);
+            });
+        });
+    // Display last visit message
+    const sidebar = document.getElementById("visit-message");
+    const lastVisit = localStorage.getItem("lastVisit");
+    const now = new Date();
+    if (lastVisit) {
+        const lastVisitDate = new Date(lastVisit);
+        const daysSinceLastVisit = Math.floor((now - lastVisitDate) / (1000 * 60 * 60 * 24));
+        if (daysSinceLastVisit === 0) {
+            sidebar.textContent = "Welcome back! You last visited today.";
+        } else if (daysSinceLastVisit === 1) {
+            sidebar.textContent = "Welcome back! You last visited yesterday.";
+        } else {
+            sidebar.textContent = `Welcome back! You last visited ${daysSinceLastVisit} days ago.`;
+        }
+    } else {
+        sidebar.textContent = "Welcome! This is your first visit.";
+    }
+    localStorage.setItem("lastVisit", now.toISOString());
+});

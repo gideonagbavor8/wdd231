@@ -63,9 +63,7 @@ nav ul li a {
     color: var(--Text-Color);
     font-size: 1.2rem;
     display: flex;
-    /* justify-content: flex-end; */
     padding: 0.3rem;
-    /* border-radius: 4px; */
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -100,14 +98,11 @@ nav ul {
 
 }
 
-
 .menu-toggle-small {
     display: none;
 }
 
 .hero {
-    /* height: 300px;  */
-    /* overflow: hidden; */
     margin-left: 2rem;
     margin-right: 2rem;
     position: relative;
@@ -118,7 +113,6 @@ nav ul {
 .hero img {
     width: 100%;
     height: auto;
-    /* display: block; */
     opacity: 0.7;
 }
 
@@ -130,16 +124,13 @@ nav ul {
     transform: translate(-50%, -50%);
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    /* opacity: 1; */
 }
 
 .call-to-action a{
     line-height: 2.5rem;
     background: var(--Secondary-Color);
-    /* opacity: 0.87; */
     color: white;
     font-weight: bold;
-    /* opacity: 1; */
 
 
 }
@@ -155,15 +146,12 @@ nav ul {
 }
 
 .join-main form {
-    /* margin: 1rem 2%; */
     display: flex;
     flex-direction: column;
-    /* gap: 15px;  */
     flex: 1;
     max-width: 45%;
     padding: 20px;
     border-radius: 10px;
-    /* background-color: #f9f9f9; */
     background-color: var(--Background-Color);
     }
 
@@ -176,9 +164,8 @@ nav ul {
     h2{
         font-size: 1.5rem;
         color: var(--Primary-Color);
-        /* border-bottom: 1px solid var(--Primary-Color); */
-        /* text-align: center; */
     }
+    
     input[type=text],
     input[type=tel],
     input[type=date],

@@ -1,50 +1,51 @@
 [
     {
-        "name": "Item 1",
-        "address": "123 Main Street, City, Country",
-        "description": "A brief description of Item 1.",
-        "image": "images/item1.webp"
+      "name": "Mount Afadjato",
+      "address": "Near Liati Wote, Hohoe District, Volta Region, Ghana",
+      "description": "The highest mountain in Ghana, offering breathtaking views, lush vegetation, and hiking trails. A paradise for adventurers and nature lovers.",
+      "image": "images/mountain-afadjato.webp"
     },
     {
-        "name": "Item 2",
-        "address": "456 Elm Street, City, Country",
-        "description": "A brief description of Item 2.",
-        "image": "images/item2.webp"
+      "name": "Wli Waterfalls",
+      "address": "Hohoe Municipality, Volta Region, Ghana",
+      "description": "Known as the tallest waterfall in West Africa, Wli Waterfalls is surrounded by tropical forests and is a haven for ecotourism and birdwatching.",
+      "image": "images/wli-falls.webp"
     },
     {
-        "name": "Item 3",
-        "address": "789 Oak Street, City, Country",
-        "description": "A brief description of Item 3.",
-        "image": "images/item3.webp"
+      "name": "Tafi Atome Monkey Sanctuary",
+      "address": "Tafi Atome Village, Volta Region, Ghana",
+      "description": "A community-based sanctuary protecting the Mona monkeys. Visitors can interact with the monkeys and learn about local conservation efforts.",
+      "image": "images/tafi-atome.webp"
     },
     {
-        "name": "Item 4",
-        "address": "101 Pine Street, City, Country",
-        "description": "A brief description of Item 4.",
-        "image": "images/item4.webp"
+      "name": "Volta Lake",
+      "address": "Spanning across the Volta Region, Ghana",
+      "description": "The largest artificial lake in the world by surface area, offering opportunities for fishing, boating, and scenic views.",
+      "image": "images/volta-lake.webp"
     },
     {
-        "name": "Item 5",
-        "address": "202 Maple Street, City, Country",
-        "description": "A brief description of Item 5.",
-        "image": "images/item5.webp"
+      "name": "Kente Weaving Village (Kpetoe)",
+      "address": "Agortime-Kpetoe, Volta Region, Ghana",
+      "description": "Known for its traditional kente weaving, this village offers visitors an authentic cultural experience and insight into the craftsmanship of Ghanaian textiles.",
+      "image": "images/kente-weaving.webp"
     },
     {
-        "name": "Item 6",
-        "address": "303 Birch Street, City, Country",
-        "description": "A brief description of Item 6.",
-        "image": "images/item6.webp"
+      "name": "Gemi Mountain Cross",
+      "address": "Amedzofe, Volta Region, Ghana",
+      "description": "A historic cross located atop Gemi Mountain, providing panoramic views of the region and a serene atmosphere for reflection.",
+      "image": "images/gemi-falls.webp"
     },
     {
-        "name": "Item 7",
-        "address": "404 Cedar Street, City, Country",
-        "description": "A brief description of Item 7.",
-        "image": "images/item7.webp"
+      "name": "Tafi Abuife Traditional Smock Center",
+      "address": "Tafi Abuife, Volta Region, Ghana",
+      "description": "Renowned for its production of traditional smocks, this center highlights Ghanaian heritage and craftsmanship.",
+      "image": "images/smock-center.webp"
     },
     {
-        "name": "Item 8",
-        "address": "505 Spruce Street, City, Country",
-        "description": "A brief description of Item 8.",
-        "image": "images/item8.webp"
+      "name": "Adaklu Mountain",
+      "address": "Near Ho, Volta Region, Ghana",
+      "description": "A towering mountain known for its cultural significance and climbing challenges, attracting both locals and tourists.",
+      "image": "images/adaklu-mount.webp"
     }
-]
+  ]
+  

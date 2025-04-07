@@ -363,3 +363,95 @@
 
 
 }
+
+
+@media (max-width: 320px) {
+    header {
+        display: flex;
+        flex-direction: row; /* Stack items horizontally */
+        justify-content: center; /* Align items to the center */
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        /* gap: 0.5rem; */
+    }
+
+    .log{
+        padding: 0;
+    }
+
+    .logo img {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 0.5rem;
+        left: 1.5rem;
+    }
+
+    .comp-name{
+        padding: 0;
+    }
+
+    .comp-name p {
+        text-align: center;
+        font-size: 0.5rem; /* Adjust text size for smaller screens */
+        line-height: 0.2rem;
+        /* padding: 0.5rem; */
+    }
+
+    p.company{
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        display: none;
+        /* flex-direction: column;  */
+        /* gap: 0.5rem;  */
+        /* position: static; */
+        /* background-color: #dee0e2;  */
+        /* padding: 1rem; */
+        /* width: 100%; */
+        /* z-index: 999; */
+    }
+
+    nav ul li {
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: var(--Primary-Color); /* Use primary color for links */
+        font-size: 0.9rem; /* Resize text for smaller screens */
+        display: block;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        background-color: #ffffff;
+        transform: scale(1.05); /* Slightly scale on hover */
+        color: black;
+    }
+
+    .menu-toggle-small {
+        font-weight: bold;
+        background: none;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-toggle-small button {
+        font-weight: bold;
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        padding: 0;
+    }
+
+    .menu-toggle-small button:hover {
+        transform: rotate(90deg); /* Rotate on hover */
+    }
+}

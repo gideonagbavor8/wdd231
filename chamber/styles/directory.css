@@ -181,7 +181,7 @@ nav ul {
       border-left-color:#555;
       font-size: 0.8rem;
       color: #3D405B;
-      width: 230px;
+      width: 220px;
     }
   
     input:required {border-left-color: #d70000;}
@@ -707,3 +707,155 @@ footer .center a img:hover {
 .dark-mode nav a {
     color: #f8f9fa;
 }
+
+.cards-container {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  /* Small screens (320px to 640px) */
+  @media screen and (min-width: 320px) and (max-width: 640px) {
+    .cards-container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4";
+    }
+  }
+  
+  /* Medium screens (641px to 1024px) */
+  @media screen and (min-width: 641px) and (max-width: 1024px) {
+    .cards-container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "card1 card2"
+        "card3 card4";
+    }
+  
+    /* Hover effect for tablet screens */
+    .cards:hover {
+      background-color: #f0f8ff; /* Light blue hover background */
+      transform: scale(1.02); /* Slight scaling effect */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+      transition: all 0.3s ease; /* Smooth transition */
+    }
+  }
+  
+  /* Large screens (1025px and above) */
+  @media screen and (min-width: 1025px) {
+    .cards-container {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "card1 card2 card3 card4";
+    }
+  
+    /* Hover effect for large screens */
+    .cards:hover {
+      background-color: #f0f8ff; /* Light blue hover background */
+      transform: scale(1.05); /* Slight scaling effect */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+      transition: all 0.3s ease; /* Smooth transition */
+    }
+  }
+  
+  /* Assign grid areas to cards */
+  .cards:nth-child(1) {
+    grid-area: card1;
+  }
+  
+  .cards:nth-child(2) {
+    grid-area: card2;
+  }
+  
+  .cards:nth-child(3) {
+    grid-area: card3;
+  }
+  
+  .cards:nth-child(4) {
+    grid-area: card4;
+  }
+  
+  /* Basic card styling */
+  .cards {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cards img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .cards button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background: var(--Primary-Color);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+  .main-discover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Ensure the parent container prevents overflow */
+.sidebar {
+    overflow: hidden; /* Hides anything outside the container */
+    position: relative; /* Ensures correct positioning for the animation */
+  }
+
+/* Base styles for the aside welcome message */
+#visit-message {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--Primary-Color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    white-space: nowrap; /* Ensure the text stays on one line */
+    overflow: hidden; /* Hide excess text */
+    position: relative; /* Required for animation */
+}
+
+/* Animation styles */
+@keyframes slide {
+    0% {
+        transform: translateX(-10%); /* Start completely off the left side */
+    }
+    50% {
+        transform: translateX(50%); /* Move halfway across */
+    }
+    100% {
+        transform: translateX(100%); /* Finish completely off the right side */
+    }
+}
+
+/* Apply animation to the welcome message */
+#visit-message {
+    animation: slide 10s linear infinite; /* Infinite animation with 5-second duration */
+}
+
+
+/* Center the <p> tag text on the page */
+#explore-message {
+    text-align: center; /* Ensure text is centered within the element */
+    font-size: 1.3rem; /* Adjust font size for readability */
+    font-weight: bold; /* Add some emphasis to the text */
+    color: #333; /* Set a subtle color for good contrast */
+    border-bottom: 2px solid var(--Primary-Color); /* Add a bottom border for emphasis */
+  }
+  

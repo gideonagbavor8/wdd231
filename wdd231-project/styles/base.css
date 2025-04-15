@@ -1,0 +1,350 @@
+:root {
+    --primary-color: #2A4D69;     /* Deep navy blue – great for headers, CTA */
+    --accent-color: #FFA500;      /* Vivid orange – great for buttons or highlights */
+    --background-color: #F9F9F9;  /* Soft light gray – easy on the eyes for main BG */
+    --text-color: #1A1A1A;        /* Almost black – strong readability on light BG */
+  }
+  
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    background-color: var(--background-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #f0f0f0; 
+}
+
+.hero picture,
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+  
+.hero-text .cta {
+    display: inline-block;
+    margin-bottom: 1.2rem;
+    padding: 0.6rem;
+    font-size: 1rem;
+    background-color: #FF8C00;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Hover effect */
+  .hero-text .cta:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.05);
+    font-weight: bold;
+  }
+
+
+
+/* Logo and Site Name Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between the logo and the site name */
+}
+
+.logo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: contain; /* Ensures the logo scales properly without distortion */
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.modal-trigger {
+    /* gap: 3rem; */
+    margin-left: 5rem;
+}
+
+button .modal-trigger {
+    /* gap: 3rem; */
+    margin-left: 3rem;
+}
+
+dialog {
+    /* position: fixed; */
+    top: 20%;
+    /* left: 50%; */
+    border: none;
+    border-radius: 10px;
+    padding: 1.5rem;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for UL items inside modals */
+dialog ul {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+dialog h3{
+    margin-top: 1.5rem;
+}
+
+.close-modal-x {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    /* font-weight: bold; */
+    cursor: pointer;
+}
+
+.close-modal-x:hover {
+    color: darkred;
+}
+
+
+
+/* Main Section Styling */
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+
+
+/* Heading Styling */
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+/* Button Styling */
+section .btn,
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+    background-color: #FFA500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+button:hover, 
+section .btn:hover {
+    background-color: #FF8C00;
+}
+
+/* Featured Resources */
+#resource-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.resource-item {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 300px;
+}
+
+/* Weather Widget Styling */
+.current-weather {
+    font-size: 1.1rem;
+    padding: 10px;
+    /* background-color: #FFD700; */
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* Events Section */
+.events-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.event-item {
+    background-color: var(--background-color);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Programs Section */
+.programs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.program-item {
+    background-color: var(--background-color);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Hide the nav by default */
+.mobile-nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    padding: 20px;
+    z-index: 10;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mobile-nav.open {
+    display: flex;
+  }
+  
+  .menu-icon,
+  .close-icon {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+main {
+    padding: 20px;
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer a{
+    color: white;
+}
+
+footer img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

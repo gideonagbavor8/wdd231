@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #2A4D69;     /* Deep navy blue – great for headers, CTA */
+    --accent-color: #FFA500;      /* Vivid orange – great for buttons or highlights */
+    --background-color: #F9F9F9;  /* Soft light gray – easy on the eyes for main BG */
+    --text-color: #1A1A1A;        /* Almost black – strong readability on light BG */
+  }
+  
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#thank-you-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+#thank-you-message {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* font-size: 2rem; */
+}
+
+h2 {
+    color: var(--text-color);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.thank-you-text{
+    font-size: 1.1rem;
+}

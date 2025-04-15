@@ -1,0 +1,192 @@
+:root {
+    --primary-color: #2A4D69;     /* Deep navy blue – great for headers, CTA */
+    --accent-color: #FFA500;      /* Vivid orange – great for buttons or highlights */
+    --background-color: #F9F9F9;  /* Soft light gray – easy on the eyes for main BG */
+    --text-color: #1A1A1A;        /* Almost black – strong readability on light BG */
+  }
+  
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 15px 30px;
+        background-color: var(--primary-color);
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center; /* Vertically aligns the logo and site name */
+        gap: 15px; /* Adds space between the logo and the site name */
+    }
+
+    .logo {
+        width: 60px; /* Moderate size for tablet screens */
+        height: 60px;
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* Adjusts site name font size to be more balanced */
+        margin: 0;
+    }
+
+    nav ul {
+        display: flex; /* Aligns navigation links horizontally */
+        list-style: none; /* Removes bullets */
+        gap: 20px; /* Adds reasonable space between links */
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        text-decoration: none; /* Removes underline */
+        color: white;
+        font-size: 1rem; /* Makes links readable on medium screens */
+    }
+
+    form {
+        display: flex; /* Aligns form elements horizontally */
+        gap: 8px; /* Adds space between the input field and the button */
+    }
+
+    form input {
+        padding: 5px 10px;
+        font-size: 0.9rem; /* Slightly smaller text for input field */
+        border-radius: 5px;
+        border: 1px solid #ccc; /* Adds subtle border */
+    }
+
+    form button {
+        padding: 5px 12px;
+        font-size: 0.9rem;
+        border: none;
+        background-color: #FFA500; /* Bright button color */
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    form button:hover {
+        background-color: #FF8C00; /* Darker orange for hover effect */
+    }
+
+    main {
+        padding: 30px;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    /* Hero Image Section */
+    .hero {
+        height: 250px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .logo-container {
+        flex-direction: row; /* Keep logo and site name horizontally aligned */
+        gap: 20px; /* Slightly larger gap */
+    }
+    .logo {
+        width: 50px; /* Moderate size for the logo */
+        height: 50px;
+    }
+    header h1 {
+        font-size: 1.3rem; /* Larger font size for medium screens */
+    }
+
+    main {
+        gap: 30px; /* Moderate spacing between sections */
+    }
+
+    .resource-item {
+        max-width: 45%; /* Resources in two columns */
+    }
+
+    section h2 {
+        font-size: 1.8rem; /* Adjust heading size for medium screens */
+    }
+
+    .categories-list,
+    .popular-list {
+        gap: 20px; /* Moderate spacing between items */
+    }
+
+    .category-item,
+    .popular-item {
+        max-width: 48%; /* Two items per row */
+    }
+
+    .events-list,
+    .programs-list {
+        gap: 20px; /* Moderate spacing between items */
+    }
+
+    .event-item,
+    .program-item {
+        max-width: 48%; /* Two items per row */
+    }
+
+    #contact-form-section {
+        padding: 20px 25px;
+    }
+    
+    input, textarea {
+        font-size: 1rem;
+    }
+
+    button.menu-icon{
+        display: none; /* Hide menu icon on medium screens */
+    }
+
+    .mobile-nav {
+        display: block;
+        position: static;
+        background-color: transparent;
+        font-size: 1rem;
+    }
+
+    .mobile-nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-nav li {
+        list-style: none;
+    }
+
+    .mobile-nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    .close-icon {
+        display: none; /* Hide close icon since menu isn't toggleable on medium screens */
+    }
+    
+}
+    
+
+
+
+ 
+

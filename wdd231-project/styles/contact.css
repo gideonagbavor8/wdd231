@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #2A4D69;     /* Deep navy blue – great for headers, CTA */
+    --accent-color: #FFA500;      /* Vivid orange – great for buttons or highlights */
+    --background-color: #F9F9F9;  /* Soft light gray – easy on the eyes for main BG */
+    --text-color: #1A1A1A;        /* Almost black – strong readability on light BG */
+  }
+  
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+#contact-form-section {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.required {
+    color: red;
+    font-weight: 800;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #FFA500;
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #FF8C00;
+}

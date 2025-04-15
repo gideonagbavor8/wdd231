@@ -1,0 +1,265 @@
+:root {
+    --primary-color: #2A4D69;     /* Deep navy blue – great for headers, CTA */
+    --accent-color: #FFA500;      /* Vivid orange – great for buttons or highlights */
+    --background-color: #F9F9F9;  /* Soft light gray – easy on the eyes for main BG */
+    --text-color: #1A1A1A;        /* Almost black – strong readability on light BG */
+  }
+  
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header{
+        background-color: var(--primary-color);
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    h1 {
+        flex: 1;
+        font-size: 0.1rem;
+        margin: 0;
+        text-align: center; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    /* Hero Image Section */
+    .hero {
+        height: 230px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text p {
+        font-size: 0.875rem;
+    }
+
+    .hero-text .cta {
+        font-size: 1.1rem;
+      }
+
+    /* Logo, h1, and Menu Icon Row */
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 10px; /* Space between items */
+        padding: 0 10px; /* Horizontal breathing room */
+    }
+    
+
+    .logo-container h1 {
+    font-size: clamp(1rem, 4vw, 1.5rem); /* Responsive font size */
+    margin: 0 auto; /* Center the heading horizontally */
+    text-align: center;
+    flex: 1; /* Takes remaining space between logo and menu */
+    color: #fff; /* Optional: Ensure contrast */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Prevent overflow */
+    text-overflow: ellipsis; /* Add ellipsis on overflow */
+    }
+
+
+    /* Logo Styling */
+    .logo {
+        width: 40px;
+        height: 40px;
+        object-fit: contain; 
+    }
+
+
+  
+
+    /* Menu Icon */
+    .menu-icon {
+        font-size: 1.4rem;
+        background: none;
+        border: none;
+        color: var(--background-color);
+        cursor: pointer;
+    }
+
+    /* Search Container Positioned Below */
+    form {
+        display: none;
+    }
+
+    /* Mobile Navigation Styling */
+    .mobile-nav {
+        display: none;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        padding: 80px 20px 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in-out;
+        z-index: 1000;
+    }
+
+    .mobile-nav.active {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    .mobile-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-nav ul li {
+        margin: 15px 0;
+        opacity: 0;
+        transform: translateX(30px);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .mobile-nav.active ul li {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .mobile-nav.active ul li:nth-child(1) {
+        transition-delay: 0.1s;
+    }
+    .mobile-nav.active ul li:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+    .mobile-nav.active ul li:nth-child(3) {
+        transition-delay: 0.3s;
+    }
+
+    .mobile-nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        /* text-align: center; */
+        display: block;
+        padding: 10px 20px;
+        margin: 0.5rem;
+        /* border-radius: 5px; */
+        /* background-color: #1E90FF; */
+        transition: background-color 0.3s ease-in;
+    }
+
+    .mobile-nav ul li a:hover {
+        background-color: var(--accent-color);
+        color: var(--text-color);
+        border-bottom: 1.5px solid white;
+    }
+
+    /* Close Icon Styling */
+    .close-icon {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        font-size: 2rem;
+        margin-right: 1.3rem;
+        /* color: white; */
+        cursor: pointer;
+        /* background: none; */
+        border: none;
+        z-index: 1100;
+        transition: color 0.3s ease;
+    }
+
+    .close-icon:hover {
+        color: var(--text-color);
+    }
+
+    main {
+        gap: 20px; /* Reduce spacing between sections */
+    }
+
+    section h2 {
+        font-size: 1.5rem; /* Smaller heading size for small screens */
+    }
+
+    button, 
+    section .btn {
+        font-size: 0.9rem; /* Adjust button size */
+        padding: 8px 15px; /* Compact button padding */
+    }
+
+    #featured-resources {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 1rem;
+      }
+    
+      #featured-resources #resource-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+    
+      /* #featured-resources #resource-list > * {
+        width: 100%;
+      } */
+
+    .resource-item {
+        max-width: 100%; /* Make resources fill the screen width */
+    }
+
+    .categories-list,
+    .popular-list {
+        flex-direction: column; /* Stack items vertically */
+        gap: 15px;
+    }
+
+    .category-item,
+    .popular-item {
+        max-width: 100%; /* Use full width for each item */
+    }
+
+    .events-list,
+    .programs-list {
+        flex-direction: column; /* Stack items vertically */
+        gap: 15px;
+    }
+
+    .event-item,
+    .program-item {
+        max-width: 100%; /* Items take full width */
+    }
+
+    button, 
+    section .btn {
+        font-size: 0.9rem; /* Compact button size */
+        padding: 8px 15px;
+    }
+
+    #contact-form-section {
+        padding: 15px;
+    }
+    
+    input, textarea {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        text-align: left;
+        padding: 10px;
+    }
+
+}
+    

@@ -1,0 +1,176 @@
+/* This stylesheet targets screens 1025px and above */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+    header {
+        display: flex; 
+        justify-content: space-between; /* Adds even spacing between items */
+        align-items: center; /* Vertically centers all items */
+        padding: 20px 40px;
+        color: white;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        color: white;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center; /* Ensures the logo and site name are aligned vertically */
+        gap: 20px; /* Space between logo and site name */
+    }
+
+    .logo {
+        width: 80px; 
+        height: 80px;
+    }
+    .menu-icon,
+    .close-icon {
+      display: none !important;
+    }
+  
+    .mobile-nav {
+      display: block;
+      position: static;
+      flex-direction: row;
+      /* justify-content: center; */
+      background: none;
+    }
+  
+    .mobile-nav ul {
+      display: flex;
+      /* gap: 20px; */
+      list-style: none;
+    }
+
+/* 
+    .menu-icon,
+    .close-icon {
+        display: none; 
+    } */
+   
+
+
+
+    nav ul {
+        display: flex; /* Aligns navigation links horizontally */
+        list-style: none; /* Removes bullet points */
+        gap: 30px; /* Space between navigation links */
+        margin: 0; /* Removes default spacing */
+        padding: 0;
+    }
+
+    nav ul li a {
+        text-decoration: none; /* Removes underline */
+        color: white; /* Ensures text color matches header theme */
+        font-size: 1.2rem; /* Ensures links are legible on large screens */
+    }
+
+
+    form {
+        display: flex; /* Aligns the search form items horizontally */
+        gap: 10px; /* Adds space between the input and button */
+    }
+
+    form input {
+        padding: 5px 10px;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: 1px solid #ccc; /* Adds subtle border for input field */
+    }
+
+    form button {
+        padding: 5px 15px;
+        font-size: 1rem;
+        border: none;
+        background-color: #FFA500; /* Orange button for visibility */
+        color: white; /* White text for contrast */
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    form button:hover {
+        background-color: #FF8C00; /* Darker orange for hover effect */
+    }
+
+    /* Hero Image Section */
+    .hero {
+        height: 400px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.25rem;
+    }
+
+    .hero-text .cta {
+        font-size: 1.2rem;
+        padding: 1.2rem 2.4rem;
+      }
+
+    /* main {
+        display: flex;
+        gap: 20px;
+    } */
+
+
+    main {
+        padding: 40px; /* Extra padding for spacious layout */
+        gap: 50px; /* Generous spacing between sections */
+    }
+
+    section h2 {
+        font-size: 2rem; /* Bold, prominent headings */
+    }
+
+    .resource-item {
+        max-width: 30%; /* Resources in three columns */
+    }
+
+    section h2 {
+        font-size: 2.2rem; /* Bold, prominent headings */
+    }
+
+    .categories-list,
+    .popular-list {
+        gap: 30px; /* Spacious gap between items */
+    }
+
+    .category-item,
+    .popular-item {
+        max-width: 30%; /* Three items per row */
+    }
+
+    #contact-form-section {
+        padding: 30px;
+    }
+    
+    input, textarea {
+        font-size: 1.1rem;
+    }
+
+  
+    /* .logo-container {
+        flex-direction: row; 
+        gap: 25px; 
+    } */
+
+
+
+    
+
+    
+
+
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+}
